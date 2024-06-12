@@ -22,7 +22,7 @@ function Sidebar() {
       <ul className="flex flex-col gap-2">
         <Link to="/">
           <li
-            className={`flex items-center gap-3 py-2 px-3 rounded-xl ${
+            className={`flex items-center gap-3 py-2 px-3 rounded-xl hover:text-blue-500 ${
               location.pathname === "/" ? "bg-slate-200 text-blue-500" : ""
             }`}
           >
@@ -32,7 +32,7 @@ function Sidebar() {
         </Link>
         <Link to="/products">
           <li
-            className={`flex items-center gap-3 py-2 px-3 rounded-xl ${
+            className={`flex items-center gap-3 py-2 px-3 rounded-xl hover:text-blue-500 ${
               location.pathname === "/products"
                 ? "bg-slate-200 text-blue-500"
                 : ""
@@ -44,7 +44,7 @@ function Sidebar() {
         </Link>
         <Link to="/">
           <li
-            className={`flex items-center absolute bottom-5 gap-3 py-2 px-3 rounded-xl ${
+            className={`flex items-center absolute bottom-5 gap-3 py-2 px-3 rounded-xl hover:text-blue-500 ${
               location.pathname === "/logout"
                 ? "bg-slate-200 text-blue-500"
                 : ""
